@@ -64,7 +64,7 @@ pipeline {
         stage('Scan with Trivy') {
             steps {
                 sh ("""
-                    trivy frennesson/jenkins-course
+                    trivy image frennesson/jenkins-course:latest
                 """)
             }
         }
